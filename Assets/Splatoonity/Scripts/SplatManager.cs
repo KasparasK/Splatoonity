@@ -173,7 +173,7 @@ public class SplatManager : MonoBehaviour {
 
 		RenderTextures ();
 		BleedTextures ();
-		StartCoroutine( UpdateScores() );
+	//	StartCoroutine( UpdateScores() );
 
     }
 

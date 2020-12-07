@@ -155,10 +155,10 @@
 			fixed4 c = MainTex * _Color;
 
 			// Lerp the color with the splat colors based on the splat mask channels
-			c.xyz = lerp( c.xyz, float3(1.0,0.5,0.0), splatMask.x );
-			c.xyz = lerp( c.xyz, float3(1.0,0.0,0.0), splatMask.y );
-			c.xyz = lerp( c.xyz, float3(0.0,1.0,0.0), splatMask.z );
-			c.xyz = lerp( c.xyz, float3(0.0,0.0,1.0), splatMask.w );
+			c.xyz = lerp( c.xyz, float3(0.51,0.0,0.0), splatMask.x );
+			c.xyz = lerp( c.xyz, float3(0.6,0.0,0.0), splatMask.y );
+			c.xyz = lerp( c.xyz, float3(0.7,0.0,0.0), splatMask.z );
+			c.xyz = lerp( c.xyz, float3(0.4,0.0,0.0), splatMask.w );
 			
 			o.Albedo = c.rgb;
 			o.Normal = tanNormal;
